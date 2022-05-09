@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>lab1-web</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="signupSection">
+  <div class="info">
+    <h2>Wassup!</h2>
+    <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+    <p>Hi my name is Arsen and it's a </p>
+    <p>simple registration form template</p>
+  </div>
+  <form action="#" method="POST" class="signupForm" name="signupform">
+    <h2>Sign Up</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="firstname"></label>
+        <input type="text" class="inputFields" id="username" name="username" placeholder="First name" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="secondname"></label>
+        <input type="text" class="inputFields" id="username" name="username" placeholder="Last name" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="email"></label>
+        <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+      </li>
+      <li>
+        <label for="password"></label>
+        <input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="confirmpassword"></label>
+        <input type="password" class="inputFields" id="password" name="password" placeholder="Confirm Password" value="" oninput="return passwordValidation(this.value)" required/>
+      </li>
+      <div class="checkbox">
+        <label>
+        <input type="checkbox" value="true"> I agree with terms and conditions</label>
+      </div>
+      <li id="center-btn">
+        <input type="submit" id="join-btn" name="join" alt="Join" value="Less go">
+      </li>
+    </ul>
+  </form>
+</div>
+<!-- dark/white mod -->
+<div class="pipe">
+  <div class="container">
+    <i class="fas fa-moon"></i>
+  </div>
+</div>
+<!-- dark/white mod -->
+  <script  src="./script.js"></script>
+</body>
+</html>
